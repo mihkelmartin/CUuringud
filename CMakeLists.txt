@@ -3,4 +3,4 @@ project(untitled)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(untitled k11_B_Arelofansi.cpp)
+add_executable(untitled k11_A_Telefoninumberid.cpp)

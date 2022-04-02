@@ -39,7 +39,14 @@ int main() {
             {"0", 0}
     };
     for (int i = 0; i < sisend.length(); i++) {
-        cout << tahe_kood.find(sisend.substr(i,1))->second;
+        // NB NB NB sisend[i] annab char-i tagasi, mis on sisuliselt number
+        // seega to_string(sisend[i]) annab 69 kui on 'a'
+
+        string vahe(1, sisend[i]);
+        // cout << tahe_kood.find(sisend.substr(i, 1))->second;
+        cout << tahe_kood.find(vahe)->second;
+
+
     }
     cout << endl;
 }
